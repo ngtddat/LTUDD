@@ -15,7 +15,7 @@ function hienThiSanPham()
     $result=$con->query('SELECT * FROM SanPham');
     return $result;
 }
-function updateSanPhamDB($MaSP,$TenSP,$DVT,$DonGia,$NCC)
+function updateSanPhamDB($MaSPm,$TenSP,$DVT,$DonGia,$NCC)
 {
     $con=ketnoiDB();
     $i=$con->query('UPDATE SanPham SET TenSP=$TenSP, DVT=$DVT, DonGia=$DonGia, NCC=$NCC WHERE MaSP=$MaSP');

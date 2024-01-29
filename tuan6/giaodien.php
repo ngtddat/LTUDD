@@ -94,7 +94,7 @@ global $result;
         </div>
     </div>
     <?php
-            if(isset($_POST['btnThem']))
+        if($_POST('btnThem')!==null)
         {
             $MaSP=$_POST['txtMaSP'];
             $TenSP=$_POST['txtTenSP'];
